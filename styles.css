@@ -1,0 +1,57 @@
+body {
+    box-sizing: border-box;
+    background-color: grey;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    width: 70%;
+    align-self: center;
+    margin-top: 40px;
+}
+
+.grid-item {
+    color: white;
+    background-color: rgb(63, 59, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 800;
+    height: 5em;
+    border: 3px solid green;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.grid-item:hover{
+    background-color: rgb(107, 103, 103);
+    transition: all 0.4s ease;
+}
+
+.btn-submit {
+    align-self: center;
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: cornflowerblue;
+    transition: all 0.3s ease-in;
+}
